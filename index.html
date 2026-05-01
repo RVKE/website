@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jurre de Vries</title>
+    <meta name="description" content="Jurre de Vries Portfolio" />
+    <link rel="icon" type="image/png" href="sources/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <script>
+      function openModal() {
+        document.getElementById("aboutModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("aboutModal").style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        const modal = document.getElementById("aboutModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }
+  </script>
+
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>Jurre de Vries</h1>
+        <p>Producer / Game Dev / Army Reservist</p>
+        
+        <a href="#" onclick="openModal()">About me</a>
+
+        
+
+        <div id="aboutModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <img src="sources/logo.png" alt="RAKE logo" class="logo">
+
+            <p>
+              My name is Jurre. I am 22 years old and currently serving full-time in the Royal Netherlands Army.<br><br>
+              I produce music under the alias "RAKE" and from time to time work on game development projects.<br><br>
+              I have experience with multiple front-end programming languages (C#, JavaScript, Python, HTML).<br><br>
+              Furthermore I am proficient in programs like Unity, Blender, DaVinci Resolve, Logic Pro and Affinity.
+            </p>
+          </div>
+        </div>
+
+        <a href="mailto:devries10@icloud.com">Contact me</a>
+      </header>
+
+      <main>
+        <section class="linktree">
+          <div class="link-group">
+            <h2 class="group-title">Professional</h2>
+            <a class="link-icon" href="https://www.linkedin.com/in/jurre-de-vries-7341b9311/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <img src="sources/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a class="link-icon" href="https://github.com/RVKE" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <img src="sources/github.png" alt="GitHub" />
+            </a>
+          </div>
+
+          <div class="link-group">
+            <h2 class="group-title">Music</h2>
+            <!--<a class="link-icon" href="https://spotify.com" target="_blank" rel="noreferrer" aria-label="Spotify">
+              <img src="sources/spotify.png" alt="Spotify" />
+            </a>-->
+            <a class="link-icon" href="https://soundcloud.com/rake_dubstep" target="_blank" rel="noreferrer" aria-label="SoundCloud">
+              <img src="sources/soundcloud.png" alt="SoundCloud" />
+            </a>
+            <a class="link-icon" href="https://www.youtube.com/@rakedubstep" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <img src="sources/youtube.png" alt="YouTube" />
+            </a>
+            <a class="link-icon" href="https://www.instagram.com/rake.png/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <img src="sources/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Jurre de Vries</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
