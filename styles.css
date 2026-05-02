@@ -153,6 +153,10 @@ section.linktree {
   margin: 10% auto;
   padding: 25px;
   line-height: 1.6;
+  background-image: url("sources/texture.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .close {
